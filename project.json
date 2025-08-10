@@ -1,0 +1,10 @@
+{
+  "dependencies": [
+    "funlaby:sjrd/emptyfields/local-current"
+  ],
+  "modules": [
+    "com.funlabyrinthe.mazes.Mazes",
+    "user.sjrd.emptyfields.EmptyFields",
+    "myfunlaby.Trappe"
+  ]
+}
