@@ -26,6 +26,7 @@
       "zoneHeight": 8,
       "zoneWidth": 8,
       "map": {
+        "dimensions": [ 16, 16, 4, ],
         "palette": [
           [ "com.funlabyrinthe.mazes.Mazes:water", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
           [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
