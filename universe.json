@@ -1,15 +1,14 @@
 {
   "players": [ "player", ],
   "additionalComponents": {
-    "com.funlabyrinthe.mazes.Mazes:mapCreator": [ "map1", ],
-    "com.funlabyrinthe.mazes.Mazes:transporterCreator": [],
-    "com.funlabyrinthe.mazes.Mazes:boatCreator": [ "boat1", ],
+    "boat1": "com.funlabyrinthe.mazes.std.Boat",
+    "map1": "com.funlabyrinthe.mazes.Map",
   },
   "components": {
-    "com.funlabyrinthe.mazes.Mazes:boatCreator:boat1": {
+    "com.funlabyrinthe.core.AdditionalComponents:boat1": {
       "position": [
         [
-          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          "com.funlabyrinthe.core.AdditionalComponents:map1",
           [ 11, 15, 0, ],
         ],
       ],
@@ -17,14 +16,14 @@
     "com.funlabyrinthe.core.Core:player:com.funlabyrinthe.mazes.Player": {
       "position": [
         [
-          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          "com.funlabyrinthe.core.AdditionalComponents:map1",
           [ 1, 1, 0, ],
         ],
       ],
     },
-    "com.funlabyrinthe.mazes.Mazes:mapCreator:map1": {
-      "zoneHeight": 8,
+    "com.funlabyrinthe.core.AdditionalComponents:map1": {
       "zoneWidth": 8,
+      "zoneHeight": 8,
       "map": {
         "dimensions": [ 16, 16, 4, ],
         "palette": [
