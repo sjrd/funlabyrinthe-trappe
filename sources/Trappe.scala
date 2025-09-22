@@ -4,28 +4,13 @@ import com.funlabyrinthe.core.*
 import com.funlabyrinthe.mazes.*
 import com.funlabyrinthe.mazes.std.*
 
-object Trappe extends Module:
-  override protected def createComponents()(using Universe): Unit =
-    val magicalButton1 = new MagicalButton1
-    val antiMagicalButton1 = new AntiMagicalButton1
-    val magicalButton2 = new MagicalButton2
-    val antiMagicalButton2 = new AntiMagicalButton2
-    val buttonGoldenBlock = new ButtonGoldenBlock
-  end createComponents
-  
-  def magicalButton1(using Universe): MagicalButton1 =
-    myComponentByID("magicalButton1")
-  def antiMagicalButton1(using Universe): AntiMagicalButton1 =
-    myComponentByID("antiMagicalButton1")
-  def magicalButton2(using Universe): MagicalButton2 =
-    myComponentByID("magicalButton2")
-  def antiMagicalButton2(using Universe): AntiMagicalButton2 =
-    myComponentByID("antiMagicalButton2")
-  def buttonGoldenBlock(using Universe): ButtonGoldenBlock =
-    myComponentByID("buttonGoldenBlock")
-end Trappe
+object Trappe extends Module
 
-export Trappe.*
+@definition def magicalButton1(using Universe) = new MagicalButton1
+@definition def antiMagicalButton1(using Universe) = new AntiMagicalButton1
+@definition def magicalButton2(using Universe) = new MagicalButton2
+@definition def antiMagicalButton2(using Universe) = new AntiMagicalButton2
+@definition def buttonGoldenBlock(using Universe) = new ButtonGoldenBlock
 
 class MagicalButton1(using ComponentInit) extends PushButton:
   override def buttonDown(context: MoveContext): Unit = {
