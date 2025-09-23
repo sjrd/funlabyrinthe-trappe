@@ -24,7 +24,7 @@ end MagicalButton1
 
 class AntiMagicalButton1(using ComponentInit) extends PushButton:
   enabled = false
-  
+
   override def buttonDown(context: MoveContext): Unit = {
     import context.*
 
@@ -46,7 +46,7 @@ end MagicalButton2
 
 class AntiMagicalButton2(using ComponentInit) extends PushButton:
   enabled = false
-  
+
   override def buttonDown(context: MoveContext): Unit = {
     import context.*
 
